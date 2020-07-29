@@ -30,6 +30,9 @@ class _CorpDetailScreenState extends State<CorpDetailScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(
+          color: Colors.black, //change your color here
+        ),
         title: Text('Discover'),
       ),
       body: FutureBuilder<CorporationDetail>(
@@ -49,22 +52,25 @@ class _CorpDetailScreenState extends State<CorpDetailScreen> {
                       mainAxisAlignment:MainAxisAlignment.spaceBetween,
                       children: <Widget>[
 
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            Container(
-                              child: Text(
-                                res.corpName,
-                                style: TextStyle(fontWeight: FontWeight.bold),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Container(
+                                child: Text(
+                                  res.corpName,
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
                               ),
-                            ),
-                            Container(
-                              child: Text(
-                                res.corpNameEng,
-                                style: TextStyle(fontWeight: FontWeight.bold),
+                              Container(
+                                child: Text(
+                                  res.corpNameEng,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                         SizedBox(width: 10),
                         Container(
