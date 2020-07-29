@@ -81,4 +81,11 @@ class CorporationDetail {
 
   /// 결산월(MM)
   String accMt;
+  
+  
+  factory CorporationDetail.fromJson(Map<String, dynamic> json) =>
+      _$CorporationDetailFromJson(json);
+
+  Map<String, dynamic> toJson() => _$CorporationDetailToJson(this);
+
 }
