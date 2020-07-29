@@ -25,7 +25,7 @@ class Corporation {
   /// 종목코드
   final String stockCode;
 
-  /// 법인구분
+  /// 법인구분 
   final CorpClass corpCls;
 
   /// 보고서명
