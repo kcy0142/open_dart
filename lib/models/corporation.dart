@@ -72,3 +72,20 @@ extension CorpClassToString on CorpClass {
     }
   }
 }
+
+
+CorpClass getSelectedCls(String cls) {
+  switch (cls) {
+    case "Y":
+      return CorpClass.Y;
+    case "K":
+      return CorpClass.K;
+    case "N":
+      return CorpClass.N;
+    case "E":
+      return CorpClass.E;
+    default:
+      return        CorpClass.E;
+
+  }
+}
