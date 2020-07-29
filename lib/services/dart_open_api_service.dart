@@ -5,7 +5,7 @@ import 'package:open_dart/widgets/api_key.dart';
 Dio dio = Dio()..interceptors.add(LogInterceptor(responseBody: false));
 
 // https://opendart.fss.or.kr/api/list.json
-class DartOpenApiService {
+class DartOpenApiService { 
   
     Future<CorporationDetail> getCorporationDetail(String corpCode) async {
     String url = 'https://opendart.fss.or.kr/api/company.json';
