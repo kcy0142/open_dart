@@ -31,7 +31,7 @@ class CorporationDetail {
   /// 에러 및 정보 메시지
   String message;
 
-  /// 고유번호
+  /// 고유번호 
   String corpCode;
 
   /// 정식명칭
